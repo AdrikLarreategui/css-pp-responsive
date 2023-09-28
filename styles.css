@@ -1,0 +1,67 @@
+* {
+    color: white;
+    padding: 1px;
+    margin: 1px;
+}
+body{
+    background-color: black;
+}
+.Main{
+    padding-left: 10px;
+}
+.Story-title{
+    background-color: lightblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Another-title{
+    background-color: red;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.paragraph{
+    background-color: green;
+}
+.navigator{
+    background-color:purple;
+}
+.footer{
+    background-color: grey;
+}
+/*Until this point, all coding has been made for phone using*/
+@media only screen and (min-width: 600px) and (max-width: 720px) {
+    /*This part applies for middle-size devices (such as tablets)*/
+    .paragraph {
+      float: left;
+      width: 49%;
+      height: 580px;
+    }
+    .navigator {
+        float: right;
+        width: 49%;
+        height: 580px;
+    }
+    footer {
+        display: inline-block;
+      }
+}
+@media only screen and (min-width: 720px) {
+    /*This part applies for bigger devices (e.g. laptops, PC's and more)*/
+    .Core{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .paragraph {
+        float: left;
+        width: 70%;
+        min-height: 350px;
+    }
+    .navigator {
+        float: right;
+        width: 28%;
+        min-height: 350px;
+      }
+    .footer {
+        display: inline-block;
+        width: 100%;
+        padding: 10px;
+      }
+}
